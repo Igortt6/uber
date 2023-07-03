@@ -1,0 +1,422 @@
+
+header
+  position: relative
+  height: 50px
+
+nav
+  position: fixed
+  width: 100%
+  height: 50px
+  background-color: #212121
+  z-index: 2
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 160px
+	margin: 0
+	list-style-type: none
+	&_link
+		text-decoration: none
+		color: #ffffff
+		font-size: 15px
+		font-weight: 300
+	&_item
+		border-right: 2px dotted black
+		padding-right: 30px
+		&:last-child
+			border-right: none
+
+.hamburger 
+	display: none
+		
+.subheader
+	position: absolute
+	top: 50px
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+
+	&_logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+
+	&_official
+		margin-top: 6px
+		opacity: 0.5
+		color: #ffffff
+		font-size: 13px
+		font-weight: 400
+
+	&_call
+		color: #ffffff
+		font-size: 12px
+		font-weight: 300
+		margin-top: 19px
+		text-align: right
+
+	&_phone
+		display: block
+		margin-top: 8px
+		color: #ffffff
+		font-size: 22px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: right
+		line-height: 12px
+	&_btn
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, $tcolor_1 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		+btn_hover
+		
+
+.promo
+	min-height: 800px
+	background: url('../img/bg/main_bg.png') center (center / cover) no-repeat
+	padding: 150px 0 135px 0
+
+	&_header
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 60px
+		line-height: 60px
+		margin: 0
+		text-align: center
+	&_subheader
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 36px
+		line-height: 36px
+		margin: 0
+		margin-top: 22px
+		text-align: center
+
+	&_descr
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+		text-align: center
+		margin-top: 23px
+
+	&_btn
+		display: block
+		margin: 118px auto 0 auto
+		width: 259px
+		height: 63px
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, $tcolor_1 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
+		+btn_hover
+		
+
+.reasons
+	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background-color: $tcolor_1
+		border-radius: 100%
+	&_descr
+		width: 343px
+	&_subtitle
+		line-height: 21px
+		color: $tcolor_1
+		font-size: 17px
+		font-weight: 400
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
+
+
+.label
+	margin: 0 auto
+	height: 24px
+	width: 112px
+	padding: 5px 12px
+	background-color: #000000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
+
+.title
+	margin-bottom: 0
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+
+
+.mobile
+	min-height: 864px
+	padding: 48px 0 80px 0
+	background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+	&_row
+	&_subtitle
+		
+		color: #222222
+		font-weight: 400
+		line-height: 21px
+		text-align: center
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-top: 32px
+		margin-bottom: 19px
+		padding-top: 92px
+		&_1
+			background: url('../img/opportunity/opp_1.png') center (center / cover) no-repeat
+		&_2
+			background: url('../img/opportunity/opp_2.png') center (center / cover) no-repeat
+		&_3
+			background: url('../img/opportunity/opp_3.png') center (center / cover) no-repeat
+		&_4
+			background: url('../img/opportunity/opp_4.png') center (center / cover) no-repeat
+		&_5
+			background: url('../img/opportunity/opp_5.png') center (center / cover) no-repeat
+		&_6
+			background: url('../img/opportunity/opp_6.png') center (center / cover) no-repeat
+		&_subtitle
+			color: #ffffff
+			font-weight: 400
+			line-height: 31px
+			text-align: center
+			text-transform: uppercase
+
+		&_plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 41px
+			left: 50%
+			transform: translateX(-50%)
+			width: 26px
+			height: 26px
+			background-color: #000000
+			border-radius: 100%
+			margin: 0 auto
+			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $tcolor_1
+				transition: 0.3s all
+			&::after
+				content: ''
+				width: 2px
+				height: 14px
+				background-color: $tcolor_1
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				transition: 0.3s all
+			&:hover
+				&::before,&::after
+					background-color: $tcolor_2
+					
+					
+			
+.car
+	min-height: 896px
+	padding: 57px 0 138px 0
+	background: url('../img/bg/car_bg.png') center (center / cover) no-repeat
+	&_label
+		background-color: #ffffff
+		color: #070716
+	&_title
+		color: #ffffff
+		margin-top: 32px
+	&_subtitle
+		color: #ffffff
+		font-weight: 400
+		line-height: 21px
+		text-align: center
+	&_img
+		margin-top: 56px
+		display: flex
+		justify-content: center
+		align-items: center
+		max-height: 480px
+	&_descr
+		olor: #222222
+		font-weight: 300
+		text-align: center
+
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 50%
+				transform: translateY(-50%)
+				width: 21px
+				height:	20px
+				background: url('../icons/ok.png') center (center / cover) no-repeat
+	&_descr
+		color: #1ca8c3
+		font-weight: 300
+	.warning
+		.require_title
+			color: $tcolor_2
+		.require_list
+			li
+				&::before
+					background: url('../icons/notok.png') center (center / cover) no-repeat
+
+.map
+	min-height: 717px
+	padding: 49px 0
+	background: url('../img/bg/map_bg.png') center (center / cover) no-repeat
+
+	&_label
+		background-color: #ffffff
+		color: #070716
+		text-align: center
+	&_title
+		color: #ffffff
+		margin-top: 32px
+	&_subtitle
+		margin-top: 20px
+		color: #ffffff
+		font-weight: 400
+		line-height: 21px
+		text-align: center
+	&_link
+		margin-top: 486px
+		font-weight: 400
+		text-align: center
+		text-transform: uppercase
+		a
+			text-decoration: none
+			color: #1fbad6
+
+.footer
+	&_wraper > div
+		width: 33%
+		
+	&_divider
+		margin: 0 auto
+		margin-top: 14px
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+	&_wraper
+		display: flex
+		align-items: center
+		justify-content: center
+	&_wrapermd
+		display: none
+
+	&_social
+		display: flex		
+		&_item
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-right: 9px
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i
+				color: #fff	
+	&_links
+		&_main
+			margin-top: 32px
+			display: flex
+			justify-content: space-around
+			a
+				text-decoration: none
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub
+			margin-top: 15px
+			display: flex
+			justify-content: space-around
+			a
+				text-decoration: none
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase	
+		&_leng
+			margin-top: 19px
+			display: flex
+			justify-content: space-around
+			a
+				text-decoration: none
+				color: #1fbad6
+				font-size: 11px
+				font-weight: 400
+				text-align: center
+				text-transform: uppercase
+	&_mobile
+		display: flex
+		justify-content: flex-end
+		img
+			width: 100px
+			margin-right: 10px
+
+		
+.sm-display
+	display: none
+	

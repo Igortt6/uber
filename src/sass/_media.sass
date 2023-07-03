@@ -1,0 +1,170 @@
+@media (max-width:1400px)
+    .menu 
+        &_item
+            padding-right: 12px    
+    
+    // ------------------------------------------------------------------------------------------------------
+@media (max-width: 1200px)
+    .menu 
+        &_item
+            padding-right: 10px
+        &_link
+            font-size: 12px
+    .promo
+        &_header
+            font-size: 50px
+    .reasons
+        &_block
+            align-items: flex-start
+        &_descr
+            width: 300px
+    .mobile
+        padding: 48px 0 25px 0
+        &_item
+            width: 300px
+// ------------------------------------------------------------------------------------------------------
+@media (max-width: 991px)
+    .menu
+        padding: 10px 0
+        &_item
+            padding-right: 15px
+        &_link
+            font-size: 12px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 12px
+        &_phone
+            font-size: 20px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 28px
+        &_descr
+            font-size: 16px
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+        &_descr
+            margin-top: 10px
+            width: 300px
+        &_round
+            margin-right: 0
+    .footer
+        &_wraper > div
+            width: auto
+        &_wraper
+            flex-direction: column
+            width: 0 auto
+        &_social
+            margin-top: 10px
+    .footer
+        &_wraper
+            display: none
+        &_mobile
+            margin-top: 10px
+        &_wrapermd
+            display: flex
+// ------------------------------------------------------------------------------------------------------
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, 0.8)
+        transition: 0.6s all
+        &_item
+            padding-right: 0px
+            border: none
+            margin: 10px 0
+        &_link
+            font-size: 15px
+        &_active
+            left: 0
+    .car
+        min-height: 700px
+        padding: 57px 0 40px 0
+        &_img
+            img
+                width: 100% 
+    .hamburger 
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)        
+    .subheader 
+        &_btn
+            display: block
+            margin: 0 auto
+            width: 150px
+            height: 35px
+            margin-top: 10px
+
+    .sm-display
+        display: flex
+        margin: 0 auto
+        flex-wrap: nowrap
+        align-content: center
+        justify-content: space-around
+        margin-top: 10px
+
+    .sm-hidden
+        display: none
+    .promo
+        &_header
+            font-size: 35px
+        &_subheader
+            font-size: 25px
+        &_descr
+            font-size: 16px
+    
+// ------------------------------------------------------------------------------------------------------
+@media (max-width: 575px)
+    .menu
+        width: 100%;
+    .subheader
+        &_official
+            display: none
+        &_logo
+            margin-top: 25px
+          
+    .promo
+        min-height: 500px
+        &_header
+            font-size: 35px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            line-height: 28px
+        &_descr
+            display: none
+    
